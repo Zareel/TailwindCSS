@@ -7,30 +7,118 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Sizing</title>
   </head>
-  <body class="p-20">
+  <body class="p-20 bg-black text-gray-300">
     <!-- Width -->
     <!-- https://tailwindcss.com/docs/width -->
+    <div class="container bg-lime-200 p-7">
+      <div class="w-6 bg-rose-500 m-1 text-transparent">1</div>
+      <div class="w-12 bg-rose-500 m-1 text-transparent">1</div>
+      <div class="w-20 bg-rose-500 m-1 text-transparent">1</div>
+      <div class="w-24 bg-rose-500 m-1 text-transparent">1</div>
+      <div class="w-36 bg-rose-500 m-1 text-transparent">1</div>
+      <div class="w-44 bg-rose-500 m-1 text-transparent">1</div>
+      <div class="w-56 bg-rose-500 m-1 text-transparent">1</div>
+      <div class="w-64 bg-rose-500 m-1 text-transparent">1</div>
+      <div class="w-80 bg-rose-500 m-1 text-transparent">1</div>
+      <div class="w-96 bg-rose-500 m-1 text-transparent">1</div>
+    </div>
 
     <!-- Percentages -->
+    <div class="container bg-lime-200 p-7 flex mt-10">
+      <div class="bg-blue-500 m-1 text-transparent w-1/2">1</div>
+      <div class="bg-blue-500 m-1 text-transparent w-1/2">1</div>
+    </div>
+    <div class="container bg-lime-200 p-7 flex">
+      <div class="bg-blue-500 m-1 text-transparent w-2/5">1</div>
+      <div class="bg-blue-500 m-1 text-transparent w-3/5">1</div>
+    </div>
+    <div class="container bg-lime-200 p-7 flex">
+      <div class="bg-blue-500 m-1 text-transparent w-1/3">1</div>
+      <div class="bg-blue-500 m-1 text-transparent w-2/3">1</div>
+    </div>
+    <div class="container bg-lime-200 p-7 flex">
+      <div class="bg-blue-500 m-1 text-transparent w-1/4">1</div>
+      <div class="bg-blue-500 m-1 text-transparent w-3/4">1</div>
+    </div>
+    <div class="container bg-lime-200 p-7 flex">
+      <div class="bg-blue-500 m-1 text-transparent w-full">1</div>
+    </div>
 
-    <!-- Max Width -->
+    Max Width
     <!-- https://tailwindcss.com/docs/max-width -->
+    <div class="container bg-rose-200 p-7 my-10">
+      <div class="bg-blue-500 max-w-96 mx-auto my-2">max-w-96</div>
+      <div class="bg-blue-500 max-w-80 mx-auto my-2">max-w-80</div>
+      <div class="bg-blue-500 max-w-72 mx-auto my-2">max-w-72</div>
+      <div class="bg-blue-500 max-w-64 mx-auto my-2">max-w-64</div>
+      <div class="bg-blue-500 max-w-60 mx-auto my-2">max-w-60</div>
+      <div class="bg-blue-500 max-w-52 mx-auto my-2">max-w-52</div>
+      <div class="bg-blue-500 max-w-48 mx-auto my-2">max-w-48</div>
+      <div class="bg-blue-500 max-w-7xl mx-auto my-2">max-w-7xl</div>
+      <div class="bg-blue-500 max-w-6xl mx-auto my-2">max-w-6xl</div>
+      <div class="bg-blue-500 max-w-5xl mx-auto my-2">max-w-5xl</div>
+      <div class="bg-blue-500 max-w-4xl mx-auto my-2">max-w-4xl</div>
+      <div class="bg-blue-500 max-w-3xl mx-auto my-2">max-w-3xl</div>
+      <div class="bg-blue-500 max-w-2xl mx-auto my-2">max-w-2xl</div>
+      <div class="bg-blue-500 max-w-xl mx-auto my-2">max-w-xl</div>
+      <div class="bg-blue-500 max-w-full mx-auto my-2">max-w-full</div>
+    </div>
 
-    <!-- Width of the viewport -->
-    <!-- 100% of container -->
-    <!-- Arbitrary Width -->
+    Width of the viewport
+    <!-- https://tailwindcss.com/docs/width#viewport-width -->
+    100% of container
+    <div class="container bg-violet-200 p-7 my-10">
+      <div class="w-secreen bg-orange-700 my-2">w-screen</div>
+      <div class="w-56 md:w-auto bg-orange-700 my-2">w-56 md:w-auto</div>
+      <div class="w-full hover:w-64 bg-orange-700 my-2">w-full md:auto</div>
+      <div class="w-1/2 hover:w-full bg-orange-700 my-2">
+        w-1/2 hover:w-full
+      </div>
+      <div class="w-fill bg-orange-700 my-2">w-1/2 hover:w-full</div>
+    </div>
+    Arbitrary Width
+    <div class="container bg-violet-200 p-7">
+      <div class="w-[300px] bg-orange-700 my-2">arbitrary width</div>
+      <div class="min-w-[400px] bg-orange-700 my-2">arbitrary min-width</div>
+    </div>
 
     <!-- Height (Most of the same options as widths) -->
     <!-- https://tailwindcss.com/docs/height -->
+    <div class="container bg-sky-200 flex gap-2 p-7 my-10">
+      <div class="h-7 bg-rose-700 my-2">Height</div>
+      <div class="bg-rose-700 h-10 my-2">height</div>
+      <div class="bg-rose-700 h-12 my-2">height</div>
+      <div class="bg-rose-700 h-20 my-2">height</div>
+      <div class="bg-rose-700 h-36 my-2">height</div>
+      <div class="bg-rose-700 h-48 my-2">height</div>
+      <div class="bg-rose-700 h-60 my-2">height</div>
+    </div>
 
-    <!-- Min Height -->
+    Min Height
     <!-- https://tailwindcss.com/docs/min-height -->
+    <div class="bg-lime-200 p-7 my-10 h-[400px] text-black">
+      Height-[400px]
+      <div class="container min-h-full bg-violet-300">Height-full</div>
+    </div>
 
-    <!-- Max Height -->
+    Max Height
     <!-- https://tailwindcss.com/docs/max-height -->
+<div class="container h-96 bg-orange-200 flex gap-2 p-7">
+  <div class="max-h-80 bg-red-700">max-h-80</div>
+  <div class="max-h-64 bg-red-700">max-h-64</div>
+  <div class="max-h-48 bg-red-700">max-h-48</div>
+  <div class="max-h-40 bg-red-700">max-h-40</div>
+  <div class="max-h-32 bg-red-700">max-h-32</div>
+  <div class="max-h-10 bg-red-700">max-h-24</div>
+  <div class="max-h-full ...">min-h-full</div>
+</div>
 
     <!-- Full screen height -->
+     <div class="bg-yellow-300 h-screen my-10 text-black">
+      h-screen
+     </div>
 
     <!-- Width Auto -->
+     <div class="bg-indigo-400 w-auto">width auto</div>
   </body>
 </html>
