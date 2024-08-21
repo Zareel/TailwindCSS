@@ -9,6 +9,22 @@
   </head>
   <body class="p-20">
     <!-- https://tailwindcss.com/docs/position -->
+     <div class="relative m-10 w-1/2 h-40 bg-rose-200 my-10">parent
+<div class="absolute w-16 bg-green-600 right-0 bottom-0">child</div>
+     </div>
+     <div class="relative m-10 w-1/2 h-40 bg-rose-200 my-10">parent
+      <div class="absolute w-16 bg-green-600 right-0 top-0">child</div>
+           </div>
+           <div class="relative m-10 w-1/2 h-40 bg-rose-200 my-10">parent
+            <div class="absolute w-16 bg-green-600 left-0 bottom-0">child</div>
+                 </div>
     <!-- https://tailwindcss.com/docs/display -->
+     <div class="container bg-blue-300 text-black p-7">
+      <!-- block elements takes entire width we can set height and width -->
+      <span class="block bg-rose-300 h-16 w-[200px]">this is span</span>
+      <span class="inline bg-green-500 h-16 w-[200px]">this is another span</span>
+      <!-- for inline, height and width have no effect -->
+      <span class="inline-block bg-yellow-500 h-16 w-[200px]">this is third span</span>
+     </div>
   </body>
 </html>
