@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<ht lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,15 +7,48 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Backgrounds & Shadows</title>
   </head>
-  <body>
-    <!-- Background Images -->
+  <body class="p-7 bg-black">
+    Background gradient
     <!-- https://tailwindcss.com/docs/background-image -->
+     <div class="container p-7 bg-gray-200 ">
+      <div class="bg-gradient-to-t from-rose-500 to-green-500 p-4 m-4">gradient to t</div>
+      <div class="bg-gradient-to-b from-rose-500 to-green-500 p-4 m-4">gradient to b</div>
+      <div class="bg-gradient-to-r from-rose-500 to-green-500 p-4 m-4">gradient to r</div>
+      <div class="bg-gradient-to-l from-rose-500 to-green-500 p-4 m-4">gradient to l</div>
+      <div class="bg-gradient-to-br from-orange-500 to-blue-500 p-4 m-4">gradient to bottom-right</div>
+      <div class="bg-gradient-to-tl from-orange-500 to-blue-500 p-4 m-4">gradient to bottom-right</div>
+     </div>
 
-    <!-- Shadows -->
+
+    Shadows
     <!-- https://tailwindcss.com/docs/drop-shadow -->
     <!-- I know we didn't cover flexbox, but it's just for demo purposes -->
+     <div class="container p-7 bg-white flex flex-wrap gap-6">
+      <div class="h-24 w-24 p-2 rounded-md shadow-sm md:filter-none">shadow sm</div>
+      <div class="h-24 w-24 p-2 rounded-md shadow-md hover:shadow-2xl">shadow md</div>
+      <div class="h-24 w-24 p-2 rounded-md shadow-lg">shadow lg</div>
+      <div class="h-24 w-24 p-2 rounded-md shadow-xl">shadow xl</div>
+      <div class="h-24 w-24 p-2 rounded-md shadow-2xl">shadow 2xl</div>
+      <div class="h-24 w-24 p-2 rounded-md shadow-inner shadow-2xl">shadow inner</div>
+      
+      <div class="h-24 w-24 p-2 rounded-md shadow-xl shadow-red-500">shadow color</div>
+      <div class="h-24 w-24 p-2 rounded-md shadow-xl shadow-blue-500">shadow color</div>
+      <div class="h-24 w-24 p-2 rounded-md shadow-xl shadow-green-500">shadow color</div>
+      <div class="h-24 w-24 p-2 rounded-md shadow-xl shadow-yellow-500">shadow color</div>
+      <div class="h-24 w-24 p-2 rounded-md shadow-inner shadow-pink-500">shadow color</div>
+      <div class="h-24 w-24 p-2 rounded-md shadow-inner shadow-lime-500">shadow color</div>
+     </div>
+   
 
-    <!-- Gradients -->
+    Gradients
     <!-- https://tailwindcss.com/docs/gradient-color-stops -->
+    <div class="container p-7 bg-gray-200 ">
+      <div class="bg-gradient-to-t from-rose-500 via-blue-500 to-green-500 p-4 m-4">gradient to t</div>
+      <div class="bg-gradient-to-b from-rose-500 via-blue-500 to-green-500 p-4 m-4">gradient to b</div>
+      <div class="bg-gradient-to-r from-rose-500 via-blue-500 to-green-500 p-4 m-4">gradient to r</div>
+      <div class="bg-gradient-to-l from-rose-500 via-blue-500 to-green-500 p-4 m-4">gradient to l</div>
+      <div class="bg-gradient-to-br from-orange-500 via-green-500 to-blue-500 p-4 m-4">gradient to bottom-right</div>
+      <div class="bg-gradient-to-tl from-orange-500 via-green-500 to-blue-500 p-4 m-4">gradient to bottom-right</div>
+     </div>
   </body>
-</html>
+</ht
