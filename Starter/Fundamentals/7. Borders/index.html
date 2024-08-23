@@ -7,13 +7,50 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Borders</title>
   </head>
-  <body>
-    <!-- Border Width & Colors -->
-    <!-- https://tailwindcss.com/docs/border-width -->
+  <body class="bg-[#111111] text-gray-300 ">
+    <div class="container p-24">
+      Border Width & Colors
+      <!-- https://tailwindcss.com/docs/border-width -->
+       <div class="container p-5 m-3  bg-stone-800">
+        <div class="p-2 border-4 m-5">border all around</div>
+        <div class="p-2 border-4 border-pink-500 m-5">colored border</div>
+        <div class="p-2 border-x-4 border-yellow-500 m-5">border applied to the x axis</div>
+        <div class="p-2 border-y-4 border-sky-500 m-5">border applied to the y axis</div>
+        <div class="p-2 border-r-4 border-orange-500 m-5">border right</div>
+        <div class="p-2 border-l-4 border-lime-500 m-5">border left</div>
+        <div class="p-2 border-t-4 border-red-500 m-5">border top</div>
+        <div class="p-2 border-b-4 border-purple-500 m-5">border bottom</div>
+       </div>
+  
+      
+      <!-- https://tailwindcss.com/docs/border-radius -->
+       
+       <div class="container flex flex-wrap gap-10 bg-stone-800 p-7 m-3 mt-24">
+        <h1 class="w-24 h-24 flex items-center justify-center">Border-Radius</h1>
+        <div class="rounded-none w-24 h-24 bg-lime-500 text-sm flex items-center justify-center text-stone-900 font-bold">rounded-none</div>
+        <div class="rounded w-24 h-24 bg-lime-500 text-sm flex items-center justify-center text-stone-900 font-bold ">rounded</div>
+        <div class="rounded-sm w-24 h-24 bg-lime-500 text-sm flex items-center justify-center text-stone-900 font-bold ">rounded-sm</div>
+        <div class="rounded-md w-24 h-24 bg-lime-500 text-sm flex items-center justify-center text-stone-900 font-bold ">rounded-md</div>
+        <div class="rounded-lg w-24 h-24 bg-lime-500 text-sm flex items-center justify-center text-stone-900 font-bold ">rounded-lg</div>
+        <div class="rounded-xl w-24 h-24 bg-lime-500 text-sm flex items-center justify-center text-stone-900 font-bold ">rounded-xl</div>
+        <div class="rounded-3xl w-24 h-24 bg-lime-500 text-sm flex items-center justify-center text-stone-900 font-bold ">rounded-3xl</div>
+        <div class="rounded-full w-24 h-24 bg-lime-500 text-sm flex items-center justify-center text-stone-900 font-bold ">rounded-full</div>
+       </div>
+  
+      
+      <div class="container flex flex-wrap gap-10 bg-stone-800 p-7 m-3 mt-24">
+        <h1 class="w-24 h-24 flex items-center">Specific Sides</h1>
+        <div class="rounded-t-xl w-24 h-24 bg-violet-500 text-sm flex items-center justify-center text-stone-900 font-bold">top</div>
+        <div class="rounded-r-xl w-24 h-24 bg-violet-500 text-sm flex items-center justify-center text-stone-900 font-bold ">right</div>
+        <div class="rounded-l-xl w-24 h-24 bg-violet-500 text-sm flex items-center justify-center text-stone-900 font-bold ">left</div>
+        <div class="rounded-b-xl w-24 h-24 bg-violet-500 text-sm flex items-center justify-center text-stone-900 font-bold ">bottom</div>
+        <div class="rounded-tl-xl w-24 h-24 bg-violet-500 text-sm flex items-center justify-center text-stone-900 font-bold ">top-left</div>
+        <div class="rounded-bl-xl w-24 h-24 bg-violet-500 text-sm flex items-center justify-center text-stone-900 font-bold ">bottom-left</div>
+        <div class="rounded-tr-xl w-24 h-24 bg-violet-500 text-sm flex items-center justify-center text-stone-900 font-bold ">top-right</div>
+        <div class="rounded-br-xl w-24 h-24 bg-violet-500 text-sm flex items-center justify-center text-stone-900 font-bold ">bottom-right</div>
+       </div>
 
-    <!-- Border Radius -->
-    <!-- https://tailwindcss.com/docs/border-radius -->
-
-    <!-- Specific Sides -->
+    </div>
+   
   </body>
 </html>
