@@ -8,15 +8,77 @@
     <title>Flex</title>
   </head>
   <body>
-    <!-- https://tailwindcss.com/docs/flex -->
-
+    <div class="bg-[#111111] text-gray-300 min-h-screen p-10">
+  <!-- https://tailwindcss.com/docs/flex -->
+   flex-1 and flex-grow
+      <div class="container p-7 m-7 bg-stone-800 flex">
+        <div class="bg-rose-500 m-3 p-3  ">1</div>
+        <div class="bg-rose-500 m-3 p-3 ">2</div>
+        <div class="bg-rose-500 m-3 p-3 ">3</div>
+        <div class="bg-rose-500 m-3 p-3  flex-grow">4</div>
+        <div class="bg-rose-500 m-3 p-3 flex-1">5</div>
+        <div class="bg-rose-500 m-3 p-3 ">6</div>
+      </div>
+      flex-1
+      <div class="container p-7 m-7 bg-stone-800 flex">
+        <div class="bg-rose-500 m-3 p-3  ">1</div>
+        <div class="bg-rose-500 m-3 p-3 flex-1">2</div>
+        <div class="bg-rose-500 m-3 p-3 ">3</div>
+        <div class="bg-rose-500 m-3 p-3  ">4</div>
+        <div class="bg-rose-500 m-3 p-3 flex-1">5</div>
+        <div class="bg-rose-500 m-3 p-3 ">6</div>
+      </div>
+      flex-col direction
     <!-- https://tailwindcss.com/docs/flex-direction#column -->
+    <div class="container p-7 m-7 bg-stone-800 flex flex-col ">
+      <div class="bg-rose-500 m-3 p-3  ">1</div>
+      <div class="bg-rose-500 m-3 p-3 ">2</div>
+      <div class="bg-rose-500 m-3 p-3 ">3</div>
+     
+    </div>
 
+    justify items
     <!-- https://tailwindcss.com/docs/justify-items -->
+    <div class="container p-7 m-7 bg-stone-800 flex justify-end">
+      <div class="bg-lime-500 m-3 p-3  ">1</div>
+      <div class="bg-lime-500 m-3 p-3 ">2</div>
+    
+    </div>
+    <div class="container p-7 m-7 bg-stone-800 flex justify-center">
+      <div class="bg-lime-500 m-3 p-3  ">1</div>
+      <div class="bg-lime-500 m-3 p-3  ">2</div>
+     
+    </div>
+    <div class="container p-7 m-7 bg-stone-800 flex justify-start">
+      <div class="bg-lime-500 m-3 p-3  ">1</div>
+      <div class="bg-lime-500 m-3 p-3 ">2</div>
+
+    </div>
+    <div class="container p-7 m-7 bg-stone-800 flex justify-between">
+      <div class="bg-lime-500 m-3 p-3  ">1</div>
+      <div class="bg-lime-500 m-3 p-3 ">2</div>
+
+    </div>
+    <div class="container p-7 m-7 bg-stone-800 flex justify-around">
+      <div class="bg-lime-500 m-3 p-3  ">1</div>
+      <div class="bg-lime-500 m-3 p-3 ">2</div>
+
+    </div>
 
     <!-- https://tailwindcss.com/docs/order -->
+    <div class="container p-7 m-7 bg-stone-800 flex">
+      <div class="bg-rose-500 m-3 p-3 order-4 ">1</div>
+      <div class="bg-rose-500 m-3 p-3 flex-1">2</div>
+      <div class="bg-rose-500 m-3 p-3 ">3</div>
+      <div class="bg-rose-500 m-3 p-3  ">4</div>
+      <div class="bg-rose-500 m-3 p-3 flex-1">5</div>
+      <div class="bg-rose-500 m-3 p-3 ">6</div>
+    </div>
 
     <!-- Grow and shrink -->
     <!-- https://tailwindcss.com/docs/flex-shrink -->
   </body>
+
+    </div>
+  
 </html>
